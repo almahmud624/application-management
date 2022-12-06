@@ -6,6 +6,7 @@ import { MdOutlineNotificationsNone } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 import { IoMdCalendar } from "react-icons/io";
 import { RiSettings4Line } from "react-icons/ri";
+import { RxHamburgerMenu } from "react-icons/rx";
 const menuItems = [
   { itemName: "Home" },
   { itemName: "Job Opening", submenu: ["item-1", "item-2"] },
@@ -22,19 +23,7 @@ const Navbar = () => {
         <div className="navbar bg-gray-800 p-0 min-h-0">
           <div className="flex-none">
             <button className="btn btn-square btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block w-5 h-5 stroke-current text-gray-200"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
+              <RxHamburgerMenu className="h-5 w-5" />
             </button>
           </div>
           <div className="flex-none">

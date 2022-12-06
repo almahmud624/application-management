@@ -17,3 +17,21 @@ a {
 * {
   box-sizing: border-box;
 }
+.table :where(thead, tbody, tfoot) :where(th, td) {
+  background-color: white !important;
+  border-style: none;
+  color: #8e929b;
+}
+.table :where(thead) :where(th, td) {
+  border-style: double;
+  border-bottom: 3px solid #efefef;
+  color: #8e929b;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.drawer {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  height: auto !important;
+}

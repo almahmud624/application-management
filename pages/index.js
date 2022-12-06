@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Applications from "../Components/Applications";
+import FooterNavigation from "../Components/FooterNavigation";
 import Navbar from "../Components/Navbar";
 import SectionHeading from "../Components/SectionHeading";
 
@@ -8,10 +10,16 @@ export default function Home() {
       <Head>
         <title>Application Management</title>
       </Head>
-
-      <Navbar />
-
-      <SectionHeading />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <SectionHeading />
+        <Applications />
+      </main>
+      <footer>
+        <FooterNavigation />
+      </footer>
     </div>
   );
 }

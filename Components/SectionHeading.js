@@ -5,19 +5,10 @@ import { BsTable } from "react-icons/bs";
 import { TfiPrinter } from "react-icons/tfi";
 import { AiOutlineSortAscending } from "react-icons/ai";
 import Image from "next/image";
-const menuItems = [
-  { itemName: "Home" },
-  { itemName: "Job Opening", submenu: ["item-1", "item-2"] },
-  { itemName: "Candidates", submenu: ["item-1", "item-2"] },
-  { itemName: "Interviews" },
-  { itemName: "Clients" },
-  { itemName: "Contacts" },
-  { itemName: "Campaigns" },
-];
 
 const SectionHeading = () => {
   return (
-    <div className="navbar bg-[#F5F6FA] py-0">
+    <div className="navbar bg-[#F5F6FA] py-0 border-b">
       <div className="navbar-start">
         <div className="navbar bg-[#F5F6FA] p-0 min-h-0">
           <div className="flex-none">
@@ -70,7 +61,7 @@ const SectionHeading = () => {
         </a>
         <a
           href="/"
-          className="btn p-3 py-1 min-h-0 h-8 text-gray-400 bg-transparent border-transparent hover:bg-[#EEF1F7] hover:border-gray-300"
+          className="btn p-3 py-1 min-h-0 h-8 text-gray-400 bg-transparent border-transparent hover:bg-transparent hover:border-gray-300"
         >
           <AiOutlineSortAscending className="h-5 w-5" />
         </a>
