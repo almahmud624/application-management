@@ -8,9 +8,9 @@ import Image from "next/image";
 
 const SectionHeading = () => {
   return (
-    <div className="navbar bg-[#F5F6FA] py-0 border-b">
-      <div className="navbar-start">
-        <div className="navbar bg-[#F5F6FA] p-0 min-h-0">
+    <div className="navbar bg-[#F5F6FA] py-0 border-b md:flex-row flex-col">
+      <div className="navbar-start w-full md:pt-0 pt-5">
+        <div className="navbar md:justify-start justify-center bg-[#F5F6FA] p-0 min-h-0">
           <div className="flex-none">
             <Image src="/Assets/save-contact.png" width={30} height={30} />
           </div>
@@ -34,7 +34,7 @@ const SectionHeading = () => {
         </div>
       </div>
 
-      <div className="navbar-end gap-2">
+      <div className="md:navbar-end navbar-center justify-center w-full gap-2 md:py-0 py-5">
         <a
           href="/"
           className="btn p-2 py-1 min-h-0 h-8 text-gray-400 border-gray-300 bg-[#EEF1F7] shadow-sm hover:bg-[#EEF1F7] hover:border-gray-300"

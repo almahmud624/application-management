@@ -11,9 +11,9 @@ import styles from "../styles/FooterNavigation.module.css";
 
 const FooterNavigation = () => {
   return (
-    <div className={`${styles.navbar}`}>
-      <div className="navbar-start">
-        <div className="navbar justify-between bg-[#F5F6FA] p-0 min-h-0">
+    <div className="navbar h-0 min-h-[45px] bg-[#f5f6fa] border-t lg:flex-row flex-col">
+      <div className="navbar-start w-full">
+        <div className="navbar justify-center gap-3 lg:justify-between bg-[#F5F6FA] p-0 min-h-0">
           <div className="flex-none">
             <button className="btn btn-ghost h-10 min-h-0 flex flex-col hover:bg-transparent hover:text-gray-600">
               <AiFillWechat className="h-4 w-4" />
@@ -34,8 +34,8 @@ const FooterNavigation = () => {
           </div>
         </div>
       </div>
-      <div className="navbar-center w-[62%] justify-center border-l border-r mx-5 py-0">
-        <form class="w-full">
+      <div className="navbar-center w-full lg:w-[62%] justify-center border-l border-r lg:mx-5 py-0 bg-[#F5F6FA]">
+        <form class="lg:w-full w-52 mx-auto">
           <div class="relative w-full">
             <input
               type="text"
@@ -47,7 +47,7 @@ const FooterNavigation = () => {
           </div>
         </form>
       </div>
-      <div className="navbar-end justify-between flex">
+      <div className="navbar-end justify-center lg:justify-between w-full flex bg-[#F5F6FA]">
         <button
           href=""
           className="btn p-1.5 py-1 min-h-0 h-10 text-gray-400 bg-transparent border-transparent hover:bg-transparent hover:text-gray-600 hover:border-transparent"
